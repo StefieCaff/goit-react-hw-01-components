@@ -1,34 +1,36 @@
 import PropTypes from 'prop-types';
 
 
-export const FriendsList = ({ friends }) => {
+export const FriendList = ({ friends }) => {
 
     return (
-        <ul class="friend-list">
+        <ul className="friend-list">
             {friends.map(friend => (
-            <FriendsListItem/>
+                <FriendListItem  {...friend } />
         ))}
         </ul>
     );
 
 };
 
-const FriendsListItem = ({
-    avatar: 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png',
+const FriendListItem = ({
+    avatar = 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png',
     name,
     isOnline,
     id
 }) => {
+    console.log(id);
+    console.log(isOnline);
     return (
-        <li key={ friend.id } className="item">
-            <span className="status">{ friend.isOnline }</span>
-            <img className="avatar" src={ avatar } alt={ friend.name } width="48" />
-            <p className="name">{ friend.name }</p>
-        </li>
+        <li key={id} className="item">
+            <span className="status">{isOnline}</span>
+            <img className="avatar" src={avatar} alt={name} width="48" />
+            <p className="name">{name}</p>
+        </li >
     );
 };
 
-FriendsListItem.PropTypes = {
+FriendListItem.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,
