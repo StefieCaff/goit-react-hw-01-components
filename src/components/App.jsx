@@ -4,8 +4,6 @@ import { Profile } from './User/Profile';
 import data from 'data/statistics.json';
 import { Statistics } from './Statistics/Statistics';
 
-import styled from 'styled-components';
-
 import friends from 'data/friends.json';
 import { FriendList } from './Friends/FriendList';
 
