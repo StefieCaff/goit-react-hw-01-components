@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Span } from "./styled-friend-list.";
 
 
 export const FriendList = ({ friends }) => {
@@ -23,7 +24,7 @@ const FriendListItem = ({
     console.log(isOnline);
     return (
         <li key={id} className="item">
-            <span className="status">{isOnline}</span>
+            <Span className="status">{isOnline}</Span>
             <img className="avatar" src={avatar} alt={name} width="48" />
             <p className="name">{name}</p>
         </li >
