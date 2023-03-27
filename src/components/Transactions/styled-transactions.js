@@ -8,7 +8,6 @@ export const StyledTable = styled.table`
     font-family: Courier New, Tahoma, Verdana, sans-serif;
     font-size: 14px;
     box-shadow: 0px 2px #D3D3D3;
-    margin-left 20px;
 
     .transaction-header {
         border: 1px solid #DFEFF4;
