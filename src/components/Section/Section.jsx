@@ -2,7 +2,7 @@ import { Section } from './styled-section';
 
 export const StyledSection = ({ children }) => {
     return (
-        <Section>
+        <Section className="section">
             {children}
         </Section>
     );

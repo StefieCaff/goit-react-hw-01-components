@@ -1,8 +1,10 @@
 
 import { StyledContainer } from './Container/Container';
-import { StyledSection } from './Section/Section'
+import { StyledSection } from './Section/Section';
 
-import user from 'data/user.json'
+import { StyledWrapper } from './Wrapper/Wrapper';
+
+import user from 'data/user.json';
 import { Profile } from './User/Profile';
 
 import data from 'data/statistics.json';
@@ -22,13 +24,15 @@ export const App = () => {
     <>
       <StyledSection>
         <StyledContainer>
+          <StyledWrapper>
           <Profile
             username={user.username}
             tag={user.tag}
             location={user.location}
             avatar={user.avatar}
             stats={user.stats}
-          />
+            />
+          </StyledWrapper>
         </StyledContainer>
       </StyledSection>
       

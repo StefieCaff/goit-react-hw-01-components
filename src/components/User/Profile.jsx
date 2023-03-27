@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { StyledDiv } from "./styled-profile";
 
 export const Profile = ({
   username,
@@ -7,7 +8,7 @@ export const Profile = ({
   avatar = "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
   stats
 }) => (
- <div className="profile">
+ <StyledDiv className="profile">
   <div className="description">
     <img
       src={avatar}
@@ -19,21 +20,21 @@ export const Profile = ({
     <p className="location">{location}</p>
   </div>
 
-  <ul className={stats}>
-    <li>
+  <ul className="stats-list">
+    <li className="stats-item">
       <span className="label">Followers</span>
       <span className="quantity">{stats.followers}</span>
     </li>
-    <li>
+    <li className="stats-item">
       <span className="label">Views</span>
       <span className="quantity">{stats.views}</span>
     </li>
-    <li>
+    <li className="stats-item">
       <span className="label">Likes</span>
       <span className="quantity">{stats.likes}</span>
     </li>
   </ul>
-</div>
+</StyledDiv>
 );
 
 Profile.propTypes = {
