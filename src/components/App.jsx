@@ -1,3 +1,7 @@
+
+import { StyledContainer } from './Container/Container';
+import { StyledSection } from './Section/Section'
+
 import user from 'data/user.json'
 import { Profile } from './User/Profile';
 
@@ -16,21 +20,36 @@ export const App = () => {
   return (
     
     <>
-       <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-     
-      <Statistics stats={data} />
-      <Statistics title= 'Upload Stats' stats={data} /> 
+      <StyledSection>
+        <StyledContainer>
+          <Profile
+            username={user.username}
+            tag={user.tag}
+            location={user.location}
+            avatar={user.avatar}
+            stats={user.stats}
+          />
+        </StyledContainer>
+      </StyledSection>
       
-      <FriendList friends={friends} />
-
-      <TransactionHistory items={transactions} />;
-
+      <StyledSection>
+        <StyledContainer>
+          <Statistics stats={data} />
+          <Statistics title='Upload Stats' stats={data} />
+        </StyledContainer>
+      </StyledSection>
+      
+      <StyledSection>
+        <StyledContainer> 
+          <FriendList friends={friends} />
+        </StyledContainer>
+      </StyledSection>
+      
+      <StyledSection>
+        <StyledContainer>
+          <TransactionHistory items={transactions} />
+        </StyledContainer>
+      </StyledSection>
     </>
   );
 };
