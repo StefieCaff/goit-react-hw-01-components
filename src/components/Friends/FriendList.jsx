@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { StyledSpan, StyledListItem } from "./styled-friend-list.";
+import { StyledSpan, StyledListItem } from './styled-friend-list';
 
 
 export const FriendList = ({ friends }) =>
