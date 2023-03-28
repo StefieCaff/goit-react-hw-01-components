@@ -38,25 +38,33 @@ export const App = () => {
       
       <StyledSection>
         <StyledContainer>
-          <Statistics stats={data} />
+          <StyledWrapper>
+            <Statistics stats={data} />
+          </StyledWrapper>
         </StyledContainer>
       </StyledSection>
 
       <StyledSection>
         <StyledContainer>
-          <Statistics title='Upload Stats' stats={data} />
-        </StyledContainer>
-      </StyledSection>
-      
-      <StyledSection>
-        <StyledContainer> 
-          <FriendList friends={friends} />
+          <StyledWrapper>
+            <Statistics title='Upload Stats' stats={data} />
+          </StyledWrapper>
         </StyledContainer>
       </StyledSection>
       
       <StyledSection>
         <StyledContainer>
-          <TransactionHistory items={transactions} />
+          <StyledWrapper>
+            <FriendList friends={friends} />
+          </StyledWrapper>
+        </StyledContainer>
+      </StyledSection>
+      
+      <StyledSection>
+        <StyledContainer>
+          <StyledWrapper>
+            <TransactionHistory items={transactions} />
+          </StyledWrapper>
         </StyledContainer>
       </StyledSection>
     </>
