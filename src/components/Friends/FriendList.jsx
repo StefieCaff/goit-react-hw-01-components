@@ -22,7 +22,6 @@ const FriendListItem = props => {
         id
     } = props; 
 
-    console.log(id);
     return (
         <StyledListItem key={id} className="item">
             <StyledSpan isOnline={isOnline}/>
