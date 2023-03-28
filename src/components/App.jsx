@@ -39,6 +39,11 @@ export const App = () => {
       <StyledSection>
         <StyledContainer>
           <Statistics stats={data} />
+        </StyledContainer>
+      </StyledSection>
+
+      <StyledSection>
+        <StyledContainer>
           <Statistics title='Upload Stats' stats={data} />
         </StyledContainer>
       </StyledSection>

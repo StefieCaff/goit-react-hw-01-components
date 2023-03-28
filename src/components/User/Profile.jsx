@@ -8,6 +8,7 @@ export const Profile = ({
   avatar = "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
   stats
 }) => (
+  
  <StyledDiv className="profile">
   <div className="description">
     <img

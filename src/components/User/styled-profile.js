@@ -5,7 +5,7 @@ export const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #D3D8E0;
-  color: #BEC5D1 ;
+  color: #A8B2C1 ;
   font-size: 10px;
   padding: 30px 50px 50px 50px;
 
@@ -13,7 +13,7 @@ export const StyledDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#F7F8F9;
+    background-color: white;
     padding: 15px 35px 0 35px;
     border-radius-top: 4px;
   }
