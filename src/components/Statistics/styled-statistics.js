@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledTitle = styled.section`
+export const StyledStatistics = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,46 +42,6 @@ export const StyledTitle = styled.section`
     }
 
     .percentage {
-     color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: .4px;
-  -webkit-text-stroke-color: black;
-      font-size: 14px;
-    }
-`;
-
-export const StyledNoTitle = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #D3D8E0;
-    padding: 50px 30px;
-    max-width: 300px;
-    font-family: Arial Black, Arial;
-
-    .stat-list {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-width 30px;
-      padding: 10px;
-    }
-
-        .label {
-      color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: .4px;
-  -webkit-text-stroke-color: black;
-      font-size: 8px;
-      margin-bottom: 5px;
-    }
-
-        .percentage {
      color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: .4px;

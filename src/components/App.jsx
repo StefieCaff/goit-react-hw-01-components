@@ -5,7 +5,7 @@ import { StyledSection } from './Section/Section';
 import { StyledWrapper } from './Wrapper/Wrapper';
 
 import user from 'data/user.json';
-import { Profile } from './User/Profile';
+import { Profile } from './Profile/Profile';
 
 import data from 'data/statistics.json';
 import { Statistics } from './Statistics/Statistics';

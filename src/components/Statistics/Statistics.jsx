@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
-import { StyledTitle, StyledNoTitle } from './styled-statistics'
-//import { useState } from 'react';
+import { StyledStatistics } from './styled-statistics'
 
 export const Statistics = props => {
     const {
@@ -18,19 +17,9 @@ export const Statistics = props => {
 
     return (
         <>
-        {!title 
-            ?  <StyledNoTitle className="statistics">
-                    <ul className="stat-list">
-                    {stats.map(stat => (    
-                        <li key={stat.id} className="item" style={{ backgroundColor: getColor() }}>
-                            <span className="label">{stat.label}</span>
-                            <span className="percentage">{stat.percentage}%</span>
-                        </li>
-                    ))}                
-                    </ul>
-               </StyledNoTitle>
-            :  <StyledTitle className="statistics">
-                    <h2 className="title">{title}</h2>
+            <StyledStatistics className="statistics"> 
+                {title &&
+                    <h2 className="title">{title}</h2>}
                     <ul className="stat-list">
                     {stats.map(stat => (    
                         <li key={stat.id} className="item" style={{ backgroundColor: getColor() }}>
@@ -39,9 +28,8 @@ export const Statistics = props => {
                         </li>
                     ))}
                     </ul>
-
-               </StyledTitle>
-        } 
+               </StyledStatistics>
+        
         </>
     );
 };
